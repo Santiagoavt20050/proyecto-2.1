@@ -148,7 +148,7 @@ def menu_principal():
                 print ("saliendo")
 
         elif rol == 3:
-            print("-------------------------------------------")
+            print("---------------------------------------------")
             print("1. ver notas\n 2. salir")
             opci=int(input())
             datas.cargar_datos()

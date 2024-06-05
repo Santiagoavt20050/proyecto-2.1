@@ -30,7 +30,7 @@ def menu_principal():
                     data_t.registrar_trainer()
                 elif opct ==2:
                     data_t.cargar_datos()
-                    print("Que opccion desea modificar del trainer:\n 1. horario\n 2. area de entrenamiento\n 3.agregar grupo al trainer\n 4. Mostrar Trainers\n 5. Salir")
+                    print("Que opccion desea modificar del trainer:\n 1. horario\n 2. area de entrenamiento\n 3. agregar grupo al trainer\n 4. Mostrar Trainers\n 5. Salir")
                     
                     opctm=int(input("ingrese la opcion que desea modificar: "))
                     if opctm ==1:
@@ -139,6 +139,7 @@ def menu_principal():
                 datas.imprimir_camper_info()
                 datas.cargar_datos()
                 datas.nota_camper()
+                datas.imprimir_camper_info()
             elif opctn == 3:
                 print("-------------------------------------------")
                 print ("saliendo")

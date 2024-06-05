@@ -151,6 +151,6 @@ def imprimir_nota_camper():
         
 def imprimir_camper_info():
     global data
-    print("Información de todos los Campers:\n")
-    for camper in data.items():
-        print("Nombre:" , camper)
+    print("Documentos y Nombres de los campers: ")
+    for doc, trainer in data.items():
+        print(f"Documento: {doc}, Nombre: {trainer['Nombre']}")

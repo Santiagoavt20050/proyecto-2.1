@@ -11,7 +11,7 @@ def menu_principal():
     print("|| Bienvenido a campusland ||")
     print("||  ｡☆✼★━━━━━━━━━━━━★✼☆｡   ||")
     while True:
-        print("ingres su rol\n 1. coordinador:\n 2. trainer:\n 3.camper:\n 4.Salir:")
+        print("ingresa tu rango\n 1. coordinador:\n 2. trainer:\n 3. camper:\n 4. Salir:")
         rol = 0
         try:
             rol = int(input("Ingrese la opción de su rol: "))
@@ -52,7 +52,7 @@ def menu_principal():
 
             elif opcion==2:
                 print("-------------------------------------------")
-                print("1. registrar camper \n 2.modificar camper \n 3.Matricula")
+                print("1. registrar camper \n 2. modificar camper \n 3. Matricula")
                 opcc=int(input("ingrese la opcion a la que desea acceder: "))
                 if opcc == 1:
                     print("-------------------------------------------")
@@ -60,7 +60,7 @@ def menu_principal():
                     datas.registrar_camper()
                 elif opcc == 2: 
                     print("-------------------------------------------")
-                    print("1.estado del camper\n 2.riesgo \n 3.ruta\n 4. eliminar camper\n 5.asignar grupo al camper ")
+                    print("1. estado del camper\n 2. riesgo \n 3. ruta\n 4. eliminar camper\n 5. asignar grupo al camper ")
                     opccm=int(input("ingrese a la opcion del camper que desea modificar: "))
                     if opccm == 1:
                         print("-------------------------------------------")
@@ -95,7 +95,7 @@ def menu_principal():
             elif opcion == 3:
                 print("------------------------------------------")
                 print("Binevenido a Rutas de entrenamineto")
-                print("\n1. Crear Nueva Ruta \n2. Mostrar Rutas \n3.Salir al menu Principal")
+                print("\n1. Crear Nueva Ruta \n2. Mostrar Rutas \n3. Salir al menu Principal")
                 oppc= int(input())
                 if oppc == 1:
                     print("-------------------------------------------")
@@ -111,8 +111,8 @@ def menu_principal():
                 print("----------------------------------")
                 print("Bienvenido a reportes")
                 print("Que desea hacer ")
-                print("\n1.Mostrar campers que estan Inscritos\n2.Campers que pasaron el examen inicial\n3. Entrenadores que se encuentran trabajando con CampusLands\n4. Campers que se encuentran con bajo rendimiento\n5.Campers y los trainer que se encuentren asociados a una ruta de entrenamiento\n6.Ingresar un nuevo camper graduado\n7.Mostrar campers graduados \n8.volver al menu anterior")
-                opcrprte= int(input("Ingreseuna opcion"))
+                print("\n1. Mostrar campers que estan Inscritos\n2. Campers que pasaron el examen inicial\n3. Entrenadores que se encuentran trabajando con CampusLands\n4. Campers que se encuentran con bajo rendimiento\n5. Campers y los trainer que se encuentren asociados a una ruta de entrenamiento\n6. Ingresar un nuevo camper graduado\n7. Mostrar campers graduados \n8. volver al menu anterior")
+                opcrprte= int(input("Ingresa una opcion: "))
                 if opcrprte == 1:
                     print("-------------------------------------------")
                     datas.imprimir_camper_info()
@@ -128,14 +128,10 @@ def menu_principal():
                 elif opcrprte == 7:
                     print("-------------------------------------------")
                     camper_g.mostrar_camper_graduados()
-
-
-               
-
-
+            
         elif rol == 2:
             print("--------------------------------------------------")
-            print("1.dar notas a un camper\n 2.mostar grupo\n 3.salir")
+            print("1. dar notas a un camper\n 2. mostar grupo\n 3. salir")
             prime.letrero2()
             opctn= int(input("ingrese la opcion que desea realizar"))    
             if opctn == 1:
@@ -155,9 +151,9 @@ def menu_principal():
             datas.imprimir_nota_camper()
         elif rol == 4:
             print("-------------------------------------------")
-            print("-------------------")
+            print("···················")
             print("  Usted ha salido ")
-            print("-------------------")
+            print("···················")
 
             break
 

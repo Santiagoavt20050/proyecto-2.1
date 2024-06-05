@@ -153,4 +153,4 @@ def imprimir_camper_info():
     global data
     print("Información de todos los Campers:\n")
     for camper in data.items():
-       print("Nombre:" , camper)
+        print("Nombre:" , camper)

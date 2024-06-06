@@ -26,7 +26,6 @@ def menu_principal():
                 print("1. registar trainer\n 2. modificar trainer")
                 opct=int(input("ingrese la opcion a realizar: "))
                 if opct == 1:
-                    data_t.cargar_datos()
                     data_t.registrar_trainer()
                 elif opct ==2:
                     data_t.cargar_datos()
@@ -56,7 +55,6 @@ def menu_principal():
                 opcc=int(input("ingrese la opcion a la que desea acceder: "))
                 if opcc == 1:
                     print("-------------------------------------------")
-                    datas.cargar_datos()
                     datas.registrar_camper()
                 elif opcc == 2: 
                     print("-------------------------------------------")
@@ -147,6 +145,7 @@ def menu_principal():
         elif rol == 3:
             print("---------------------------------------------")
             print("1. ver notas\n 2. salir")
+            prime.letrero3()
             opci=int(input())
             datas.cargar_datos()
             datas.imprimir_nota_camper()

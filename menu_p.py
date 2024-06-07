@@ -7,9 +7,9 @@ import matricula
 
 def menu_principal():
     print("")
-    print("||  ｡☆✼★━━━━━━━━━━━━★✼☆｡   ||")
+    print("|| ----------------------- ||")
     print("|| Bienvenido a campusland ||")
-    print("||  ｡☆✼★━━━━━━━━━━━━★✼☆｡   ||")
+    print("|| ----------------------- ||")
     while True:
         print("ingresa tu rango\n 1. coordinador:\n 2. trainer:\n 3. camper:\n 4. Salir:")
         rol = 0
@@ -134,8 +134,6 @@ def menu_principal():
             opctn= int(input("ingrese la opcion que desea realizar"))    
             if opctn == 1:
                 print("-------------------------------------------")
-                datas.imprimir_camper_info()
-                datas.cargar_datos()
                 datas.nota_camper()
                 datas.imprimir_camper_info()
             elif opctn == 3:
